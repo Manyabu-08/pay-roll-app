@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    triggers { pollSCM('* * * * *') }
+    stages {
+        stage('Install') {
+            steps {
+                sh 'pip install pytest pytest-cov'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'python -m pytest --cov=src'
+            }
+        }
+    }
+}

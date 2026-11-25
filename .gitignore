@@ -1,0 +1,22 @@
+# Node / Vite
+node_modules/
+build/
+dist/
+coverage/
+*.log
+.env*
+!.env.example
+
+# Python prototype
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
